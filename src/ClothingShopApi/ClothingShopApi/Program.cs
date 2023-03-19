@@ -1,9 +1,11 @@
-using Microsoft.AspNetCore.HttpOverrides;
+using ClothingShopApi.Abstract.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+var settings = new AppSettings();
+builder.Configuration.Bind(nameof(AppSettings), settings);
+builder.Services.AddSingleton(settings);
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
