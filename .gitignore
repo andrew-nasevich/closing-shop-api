@@ -1,5 +1,5 @@
 # Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
-[Bb]in/
+#[Bb]in/
 [Oo]bj/
 
 # mstest test results
@@ -13,13 +13,10 @@ TestResults
 *.user
 *.sln.docstates
 
-AmsNSolution/.AmsNSolution.boltdata/*
-AmsNSolution/.vs/Supercharger/*
-AmsNSolution/.vs/AmsNSolution/*
-AmsNSolution/.vs/config/*
-
 # Build results
-[Dd]ebug/
+[Ll]ogs/
+[Bb]uilds/
+[Npa*]/[Dd]ebug/
 [Rr]elease/
 x64/
 *_i.c
@@ -28,7 +25,7 @@ x64/
 *.meta
 *.obj
 *.pch
-
+*.pdb
 *.pgc
 *.pgd
 *.rsp
@@ -102,7 +99,9 @@ TestResults
 *.Cache
 ClientBin
 [Ss]tyle[Cc]op.*
+~$*
 *.dbmdl
+.realsync
 Generated_Code #added for RIA/Silverlight projects
 
 # Backup & report files from converting an old project file to a newer
@@ -110,31 +109,23 @@ Generated_Code #added for RIA/Silverlight projects
 _UpgradeReport_Files/
 Backup*/
 UpgradeLog*.XML
-*.~sql
-/AmsNSolution/AmsN.WebDeployPkg.Dev
 
-# Web deploy
-AmsNSolution/AmsN.WebDeployPkg.Dev/
-AmsNSolution/AmsN.WebDeployPkg.QA/
-AmsNSolution/AmsN.WebDeployPkg.Release/
-/AmsNSolution/db/*.~pck
-/AmsNSolution/AmsN/App_Data/XmlDocument.xml
+*.orig
+src/CarrierFinancials/**/*.orig
+package-lock.json
+allure-results/**
+reports/**
 
-/AmsNSolution/AmsN/*.user
-/AmsNSolution/AmsN.Published
+# [node_modules] folder
+node_modules/**
+src/CarrierFinancials/Modules/**/node_modules/**
 
-/db/*.~pck
-/AmsNSolution/AmsN.WebDeployPkg.Release_v1.1
-/db/*.prod
-/db/ams.~N2P_AGG_CUST_ADDRESS
-/db/ams.~v_account_info
-/db/*.~prc
-/db/telecom.~N2P_AGG_CUST_ADDRESS
-/db/telecom.~contact_alter
-/db/telecom.~CONTACTS
-doc/todo.txt
+# [.vs] folder
+.vs
 
-# OpenCover files
-AmsNSolution/coverage/*
-/AmsNSolution/results.xml
-/AmsNSolution/*.InstallLog
+# [.idea] folder
+.idea
+
+\.idea/
+log/
+.sonarqube
