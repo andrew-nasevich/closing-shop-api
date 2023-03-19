@@ -3,11 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingShopApi", "ClothingShopApi\ClothingShopApi.csproj", "{7396932F-96DC-463B-BAE1-95618BDACDC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClothingShopApi", "ClothingShopApi\ClothingShopApi.csproj", "{7396932F-96DC-463B-BAE1-95618BDACDC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingShopApi.Abstract", "ClothingShopApi.Abstract\ClothingShopApi.Abstract.csproj", "{9106AB13-04C7-48ED-B26C-A7AF43A8DB85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClothingShopApi.Abstract", "ClothingShopApi.Abstract\ClothingShopApi.Abstract.csproj", "{9106AB13-04C7-48ED-B26C-A7AF43A8DB85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingShopApi.Database", "ClothingShopApi.Database\ClothingShopApi.Database.csproj", "{BAA38C45-9F32-4564-8E63-19DFF39DA8F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClothingShopApi.Database", "ClothingShopApi.Database\ClothingShopApi.Database.csproj", "{BAA38C45-9F32-4564-8E63-19DFF39DA8F3}"
+EndProject
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

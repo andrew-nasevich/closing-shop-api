@@ -1,5 +1,4 @@
 ﻿using ClothingShopApi.Abstract.Models;
-using ClothingShopApi.Database.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClothingShopApi.Database

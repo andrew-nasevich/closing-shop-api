@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ClothingShopApi.Database.Entities
+namespace ClothingShopApi.Abstract.Models
 {
     public class Clothing
     {

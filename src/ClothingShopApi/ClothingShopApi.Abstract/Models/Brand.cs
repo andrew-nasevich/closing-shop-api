@@ -1,12 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ClothingShopApi.Database.Entities
+namespace ClothingShopApi.Abstract.Models
 {
-    public class Category
+    public class Brand
     {
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        public int? ParentCategoryId { get; set; } 
+
+        public ICollection<Clothing> Clothings { get; set; }
     }
 }
