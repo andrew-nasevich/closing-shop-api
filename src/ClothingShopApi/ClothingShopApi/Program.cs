@@ -1,10 +1,13 @@
 using ClothingShopApi.Abstract.Models;
+using ClothingShopApi.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var settings = new AppSettings();
 builder.Configuration.Bind(nameof(AppSettings), settings);
 builder.Services.AddSingleton(settings);
+
+builder.Services.ConfigureDatabase();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -19,6 +22,7 @@ builder.Services.AddCors(options =>
         });
 });
 builder.Services.AddHealthChecks();
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -43,8 +47,8 @@ app.UseHealthChecks("/healthcheck");
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.UseAuthentication();
-app.UseAuthorization();
+//app.UseAuthentication();
+//app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
 {

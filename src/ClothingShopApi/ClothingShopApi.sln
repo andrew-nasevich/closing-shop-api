@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingShopApi", "Clothing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingShopApi.Abstract", "ClothingShopApi.Abstract\ClothingShopApi.Abstract.csproj", "{9106AB13-04C7-48ED-B26C-A7AF43A8DB85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingShopApi.Database", "ClothingShopApi.Database\ClothingShopApi.Database.csproj", "{BAA38C45-9F32-4564-8E63-19DFF39DA8F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
