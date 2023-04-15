@@ -9,6 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClothingShopApi.Abstract", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClothingShopApi.Database", "ClothingShopApi.Database\ClothingShopApi.Database.csproj", "{BAA38C45-9F32-4564-8E63-19DFF39DA8F3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClothingShopApi.Web", "ClothingShopApi.Web\ClothingShopApi.Web.csproj", "{9F1136CB-602B-4635-8E98-5C1AAFC073C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +29,10 @@ Global
 		{BAA38C45-9F32-4564-8E63-19DFF39DA8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAA38C45-9F32-4564-8E63-19DFF39DA8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAA38C45-9F32-4564-8E63-19DFF39DA8F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F1136CB-602B-4635-8E98-5C1AAFC073C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F1136CB-602B-4635-8E98-5C1AAFC073C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F1136CB-602B-4635-8E98-5C1AAFC073C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F1136CB-602B-4635-8E98-5C1AAFC073C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

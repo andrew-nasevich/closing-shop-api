@@ -1,5 +1,8 @@
+using ClothingShopApi.Abstract.Interfaces;
 using ClothingShopApi.Abstract.Models;
 using ClothingShopApi.Database;
+using ClothingShopApi.Database.UnitOfWork;
+using ClothingShopApi.Database.UnitOfWork.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +11,10 @@ builder.Configuration.Bind(nameof(AppSettings), settings);
 builder.Services.AddSingleton(settings);
 
 builder.Services.ConfigureDatabase();
+builder.Services.AddScoped<IBrandRepository, BrandRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IClothingRepository, ClothingRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

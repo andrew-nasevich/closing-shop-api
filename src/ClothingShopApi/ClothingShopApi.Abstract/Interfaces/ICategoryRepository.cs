@@ -2,7 +2,7 @@
 
 namespace ClothingShopApi.Abstract.Interfaces
 {
-    internal interface ICategoryRepository : IRepository<Category>
+    public interface ICategoryRepository : IRepository<Category>
     {
     }
 }
