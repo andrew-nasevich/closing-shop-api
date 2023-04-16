@@ -6,19 +6,19 @@ namespace ClothingShopApi.Web
 {
     [ApiController]
     [Route("[controller]")]
-    public class BrandController: ControllerBase
+    public class CategoryController: ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public BrandController(IUnitOfWork unitOfWork)
+        public CategoryController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Brand>> GetBrands()
+        public ActionResult<IEnumerable<Category>> GetCategories()
         {
-            return _unitOfWork.BrandRepository.GetAll();
+            return _unitOfWork.CategoryRepository.GetAll();
         }
     }
 }

@@ -34,9 +34,19 @@ namespace ClothingShopApi.Database.UnitOfWork.Repositories
             _context.Clothings.Remove(entity);
         }
 
-        public IEnumerable<ClothingSize> GetClothingSizes(int id)
+        public ClothingSize[] GetClothingSizes(int id)
         {
             return _context.ClothingSizes.Where(sc => sc.ClothingId == id).ToArray();
+        }
+
+        public Clothing[] GetClothingsByBrandId(int brandId)
+        {
+            return _context.Clothings.Where(c => c.BrandId == brandId).ToArray();
+        }
+
+        public Clothing[] GetClothingsByCategoryId(int categoryId)
+        {
+            return _context.Clothings.Where(c => c.CategoryId == categoryId).ToArray();
         }
     }
 }

@@ -4,6 +4,8 @@ namespace ClothingShopApi.Abstract.Interfaces
 {
     public interface IClothingRepository: IRepository<Clothing>
     {
-        IEnumerable<ClothingSize> GetClothingSizes(int id);
+        ClothingSize[] GetClothingSizes(int id);
+        Clothing[] GetClothingsByBrandId(int brandId);
+        Clothing[] GetClothingsByCategoryId(int categoryId);
     }
 }
